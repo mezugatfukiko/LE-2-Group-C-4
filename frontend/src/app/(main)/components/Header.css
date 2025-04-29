@@ -4,59 +4,77 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff; /* White header */
+  background-color: #ffffff;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
   font-family: 'Lato', sans-serif;
+  flex-wrap: wrap; /* allows wrapping on very small screens, but keeps row layout as long as possible */
 }
 
-/* Smaller logo */
+/* Logo stays small */
 .logo {
   height: 40px;
   width: auto;
 }
 
+/* Profile section aligned right */
 .profile {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
+/* Icon */
 .profile-icon {
   font-size: 2rem;
   color: #5A4B8B;
 }
 
+/* Name + email stack */
 .user-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  line-height: 1.2;
 }
 
 .user-name {
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .user-email {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #555;
 }
 
+/* Dropdown arrow */
 .dropdown-icon {
   font-size: 1rem;
   color: #5A4B8B;
   cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive tweaks */
+@media (max-width: 480px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    padding: 8px 12px;
   }
 
-  .profile {
-    align-self: flex-end;
+  .user-name {
+    font-size: 0.95rem;
+  }
+
+  .user-email {
+    font-size: 0.8rem;
+  }
+
+  .profile-icon {
+    font-size: 1.8rem;
+  }
+
+  .dropdown-icon {
+    font-size: 0.9rem;
   }
 }
