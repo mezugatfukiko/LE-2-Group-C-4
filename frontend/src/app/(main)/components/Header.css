@@ -59,6 +59,43 @@
   cursor: pointer;
 }
 
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 60px; /* Adjust based on your header height */
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+/* Logout button styling */
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  color: #5A4B8B;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Logout button hover effect */
+.logout-button:hover {
+  background-color: #f0f0f0;
+  color: #d74f3f;
+}
+
+/* Logout icon styling */
+.logout-icon {
+  font-size: 1.2rem;
+}
+
 /* Responsive tweaks */
 @media (max-width: 480px) {
   .header {
