@@ -1,0 +1,91 @@
+/* Add this to match the sizing pattern visually */
+.block-wide {
+    width: 1359px; /* Matches 403 + 403 + 494 spacing */
+    background-color: #E0D1FD;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+  }
+  
+  .block-wide h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .entries-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .entries-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .entries-header,
+  .entry-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr 1fr 1fr 2fr 0.6fr;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+  
+  .entries-header {
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .entries-header span:last-child {
+    text-align: center; /* Moves 'Actions' title to match icon alignment */
+  }
+  
+  .entry-row {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #5A4B8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .edit-btn:hover {
+    color: #0275d8;
+  }
+  
+  .delete-btn:hover {
+    color: #d9534f;
+  }
+  
